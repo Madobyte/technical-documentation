@@ -1,0 +1,313 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+    box-sizing: border-box;
+    margin: 0 auto;  
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+h1{
+    margin: 20px 0;
+}
+h2{
+    padding: 50px 0 0 0;
+}
+h3{
+    margin: 0;
+}
+
+/* BACK-TO-TOP */
+div#back-to-top-icon{
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    text-shadow:-2px -2px 0 white,
+      2px -2px 0 white,
+      -2px 2px 0 white,
+      2px 2px 0 white; 
+}
+div#back-to-top-icon p{
+    margin: 10px auto;
+}
+div#back-to-top-icon a{
+    text-decoration: none;
+    color: hsla(0, 0%, 18%, 1);
+}
+i#back-to-top{
+    color: hsla(0, 0%, 18%, 1);
+    font-size: 50px;
+}
+
+/* Header */
+div#header-apple{
+    height: 40px;
+    background-color: hsla(0, 0%, 18%, 1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+div#header-apple a{
+    text-decoration: none;
+}
+div#header-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 90vw;
+    margin: 0 auto;
+}
+img#apple-logo{
+    width: auto;
+    height: 30px!important;
+    margin: 5px;
+}
+div#header-container p{
+    font-weight: 700;
+    color: white;
+    margin: 0 10px;
+    padding: 0;
+}
+
+/* MAIN */
+div#main-div{
+    display: flex;
+    max-width: 1200px;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+div#menu-btn{
+    display: none;
+}
+i.fa-bars{
+    margin: 1em;
+}
+div#menu-btn p{
+    margin: 1em;
+}
+div#navbar{
+    flex: 30% 0 150px;
+    padding: 10px;
+    text-align: center;
+}
+nav#navbar{
+    position: sticky;
+    top: 70px;
+}
+nav#navbar ul{
+    padding: 0;
+}
+nav#navbar ul li{
+    list-style-type: none;
+    background-color: hsla(75, 100%, 36%, 1);
+    border-radius: 21px;
+    padding: 10px;
+    transition: all 0.5s;
+    margin: 10px;
+}
+nav#navbar ul li a{
+    display: block;
+    text-decoration: none;
+    color: hsla(0, 0%, 10%, 1);
+}
+nav#navbar ul li:hover{
+    background-color: hsla(75, 100%, 40%, 1);
+}
+
+main#main-doc{
+    flex: 70%;
+    padding: 10px;
+}
+main#main-doc p{
+    text-align: justify;
+    padding: 18px;
+    margin: 0;
+}
+
+img {
+    max-height: 500px;
+}
+
+
+section#whats_new_in_ios_13 > img{
+    display: block;
+    margin: 10px auto;
+    height: 75vh;
+}
+
+section#next-gen_features > div{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+section#next-gen_features img{
+    height: 75vh;
+    margin: 10px auto;
+}
+section#next-gen_features h3:first-child{
+    margin: 0;
+    padding-left: 18px;
+}
+section#next-gen_features div:nth-child(odd) img{
+    order: 2;
+}
+section#next-gen_features div:nth-child(odd) div{
+    order: 1;
+}
+
+
+section#camera_features > img{
+    display: block;
+    margin: 10px auto;
+    height: 75vh;
+}
+
+section#travel_with_your_iphone > div{
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+section#travel_with_your_iphone img{
+    height: 75vh;
+    margin: 10px auto;
+}
+section#travel_with_your_iphone h3:first-child{
+    margin: 0;
+    padding-left: 18px;
+}
+section#travel_with_your_iphone div:nth-child(odd) img{
+    order: 2;
+}
+section#travel_with_your_iphone div:nth-child(odd) div{
+    order: 1;
+}
+
+section#health_and_wellness_features > img{
+    display: block;
+    margin: 10px auto;
+    height: 75vh;
+}
+
+section#supported_iphone_models h2{
+    margin: 0;
+}
+div.sub-div  div{
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+}
+
+footer{
+    background-color: hsla(0, 0%, 50%, 1);
+    height: 75px;
+    text-align: center;
+
+}
+footer p{
+    margin: 0;
+    padding: 25px;
+}
+
+@media screen and (max-device-width: 1000px){
+    div#main-div{
+        width: 100vw;
+    }
+}
+@media screen and (max-device-width: 768px){
+    div#main-div{
+        display: block;
+    }
+    div#menu-btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    nav#navbar ul#menu{
+        display: none;
+    }
+    main#main-doc, nav#navbar{
+        padding: 0 20px;
+    }
+    h2:first-of-type{
+        margin: 0;
+    }
+}
+@media screen and (max-device-width: 600px){
+    section#next-gen_features > div{
+        display: block;
+    }
+    section#next-gen_features img{
+        display: block;
+        margin: 10px auto;
+    }
+    section#travel_with_your_iphone > div{
+        display: block;
+    }
+    section#travel_with_your_iphone img{
+        display: block;
+        margin: 10px auto;
+    }
+    div.sub-div  div{
+        display: block;
+    }
+}
+/* iPad Pro */
+@media screen and (min-device-width:1024px) and (min-device-height:1366px) and (orientation: portrait){
+    div#main-div{
+        width: 100vw;
+    }
+    main#main-doc, nav#navbar{
+        padding: 20px;
+    }
+    div#back-to-top-icon{
+        bottom: 30px;
+        left: 30px;
+    }
+    section#whats_new_in_ios_13 img{
+        width: 20vw;
+        height: auto;
+    }
+    section#next-gen_features img{
+        width: 20vw;
+        height: auto;
+    }
+    section#camera_features img{
+        width: 20vw;
+        height: auto;
+    }
+    section#travel_with_your_iphone img{
+        width: 20vw;
+        height: auto;
+    }
+    section#health_and_wellness_features img{
+        width: 20vw;
+        height: auto;
+    }
+}
+@media screen and (min-device-height:1024px) and (min-device-width:1366px) and (orientation: landscape){
+    section#whats_new_in_ios_13 img{
+        width: auto;
+        height: 50vh;
+    }
+    section#next-gen_features img{
+        width: auto;
+        height: 50vh;
+    }
+    section#camera_features img{
+        width: auto;
+        height: 50vh;
+    }
+    section#travel_with_your_iphone img{
+        width: auto;
+        height: 50vh;
+    }
+    section#health_and_wellness_features img{
+        width: auto;
+        height: 50vh;
+    }
+}
